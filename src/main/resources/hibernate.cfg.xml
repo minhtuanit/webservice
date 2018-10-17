@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">obeliskra12</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/softworld?autoReconnect=true&amp;characterEncoding=utf-8&amp;useUnicode=true&amp;connectionCollation=utf8_unicode_ci&amp;characterSetResults=utf8</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="Persistence.Branch"></mapping>
+        <mapping class="Persistence.Employee"></mapping>
+        <mapping class="Persistence.SkillList"></mapping>
+        <mapping class="Persistence.ProjectRole"></mapping>
+        <mapping class="Persistence.Project"></mapping>
+        <mapping class="Persistence.Priority"></mapping>
+        <mapping class="Persistence.Level"></mapping>
+        <mapping class="Persistence.Position"></mapping>
+        <mapping class="Persistence.SkillManage"></mapping>
+        <mapping class="Persistence.Performance"></mapping>
+        <mapping class="Persistence.Email"></mapping>
+        <mapping class="Persistence.ProjectAssign"></mapping>
+
+
+    </session-factory>
+</hibernate-configuration>
